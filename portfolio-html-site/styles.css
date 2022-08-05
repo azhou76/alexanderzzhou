@@ -1,0 +1,380 @@
+/* Master styles */
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    font-family: "Lato", sans-serif;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.right-side {
+    display: flex;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    font-family: "Lato", sans-serif;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: white;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.hero-item-wrapper {
+    position: relative;
+}
+
+.hero-img-background {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text-wrapper {    /* Places text over background images */
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 86%;
+    text-align: right;
+}
+
+.hero-text-wrapper .hero-text h1 {
+    color: black;
+    font-size: 300%;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.hero-text-wrapper .hero-text p {
+    color: black;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.button-link-wrapper {
+    border: none;
+    border-radius: 5px; /* Rounded edges */
+    outline: 0;
+    display: inline-block;
+    padding: 12px 25px;
+    color: white;
+    background-color: #7e7e7e;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none; /* Removes link underline */
+}
+
+.button-link-wrapper:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* About page */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 60%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+    font-family: "Lato", sans-serif;
+}
+
+.profile-content-wrapper h1 {
+    color: lightslategray;
+    text-align: center;
+}
+
+/* Football page */
+.football-image-wrapper img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 110px;
+}
+
+.football-text-wrapper {
+    padding: 30px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.football-content-wrapper h1 {
+    color: lightslategray;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.football-content-wrapper iframe {
+    padding-left: 312px;
+    padding-bottom: 150px;
+}
+
+/* Music page */
+.music-image-wrapper img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 180px;
+}
+
+.music-text-wrapper {
+    padding: 80px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.music-content-wrapper h1 {
+    color: lightslategray;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.music-content-wrapper audio {
+    padding-top: 135px;
+    padding-left: 150px;
+}
+
+.music-text-wrapper h2 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.music-text-wrapper h3 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.hero1-item-wrapper {
+    position: relative;
+}
+
+.hero1-img-background {
+    height: 430px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.hero1-text-wrapper {    /* Places text over background images */
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 86%;
+    text-align: center;
+}
+
+.hero1-text-wrapper .hero1-text h1 {
+    color: white;
+    font-size: 300%;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.music-content-wrapper iframe {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/* Experiences page */
+.experiences-items-wrapper {
+    padding-left: 50px;
+    padding-right: 300px;
+    padding-top: 125px;
+    padding-bottom: 130px;
+    width: 60%;
+}
+
+.experiences-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experiences-image-wrapper img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.experiences-items-wrapper p {
+    font-family: "Lato", sans-serif;
+}
+
+.experiences-items-wrapper h1 {
+    color: lightslategray;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.experiences-items-wrapper h2 {
+    color: lightslategray;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.experiences-content-wrapper .side-nav {
+    width: 20%;
+    height: 50vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: none;
+    overflow-x: hidden;
+    padding-right: 30px;
+    padding-top: 150px;
+    padding-left: 15px;
+}
+
+.experiences-content-wrapper .side-nav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+    display: block;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.experiences-content-wrapper .side-nav a:hover {
+    color: black;
+}
+
+/* Contact page */
+.contact-text-wrapper {
+    padding: 30px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
