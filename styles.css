@@ -145,14 +145,14 @@ body {
 }
 
 .hero-text-wrapper .hero-text h1 {
-    color: white;
+    color: black;
     font-size: 300%;
     font-family: "Lato", sans-serif;
     font-weight: 600;
 }
 
 .hero-text-wrapper .hero-text p {
-    color: white;
+    color: black;
     font-size: 30px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
