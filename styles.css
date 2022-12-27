@@ -330,6 +330,16 @@ a {
     font-family: "Lato", sans-serif;
 }
 
+.experiences-items-wrapper p.shift1 {
+    font-family: "Lato", sans-serif;
+    margin-left: 30px;
+}
+
+.experiences-items-wrapper p.shift2 {
+    font-family: "Lato", sans-serif;
+    margin-left: 50px;
+}
+
 .experiences-items-wrapper h1 {
     color: lightslategray;
     font-family: "Lato", sans-serif;

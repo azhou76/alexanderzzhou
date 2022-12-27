@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"  />
-    <title>Experiences</title>
+    <title>Projects</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="nav-link-wrapper active-nav-link">
-                    <a href="experiences.html">Experiences</a>
+                    <a href="experiences.html">Projects</a>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@
 
                 <div class="hero1-text-wrapper">
                     <div class="hero1-text">
-                        <h1>Valuable Community Experiences</h1>
+                        <h1>CS Course Projects</h1>
                     </div>
                 </div>
             </div>
@@ -56,94 +56,315 @@
             <div class="experiences-content-wrapper">
                 <div class="side-nav">
          
-                    <a href="#year2020">2020</a><br>
-                    <a href="#year2019">2019</a><br>
-                    <a href="#year2018">2018</a><br>
-                    <a href="#year2017">2017</a>
+                    <a href="#cs17">CSCI 0170</a><br>
+                    <a href="#cs20">CSCI 0200</a><br>
+                    <a href="#cs33">CSCI 0330</a><br>
+                    <a href="#cs1420">CSCI 1420</a>
                 </div>
 
                 <div class="experiences-items-wrapper">
-                    <h1 id="year2020">2020</h1>
+                    <h1 id="cs17">CSCI 0170: Computer Science: An Integrated Introduction</h1>
                     
                     <div class="experiences-text-wrapper">
-                        <h2>Ladue Mayor's Youth Council</h2>
+                        <h2>Rackette</h2>
 
-                        <p>I applied to be part of the Ladue Mayor's Youth Council in June of 2019 because I felt there existed a
-                            disconnect between the local youth and the city government. In addition, I felt a desire to not only
-                            represent the voices of high school students at Ladue Horton Watkins but also of today's youth in general.
-                            During my time as part of the Youth Council, I worked directly with Ladue Mayor Nancy Spewak to tackle a variety
-                            of issues and challenges facing our community. Our campaigns included a "Lock it or Leave it" awareness initiative
-                            aimed at raising local awareness about the outbreak of stolen cars in the area, multiple blood drives and
-                            food drives to mitigate the impact of COVID-19 on community members, and increased efforts at combatting
-                            environmental degradation, such as by raising awareness on proper recycling/composting and by cutting
-                            down invasive honeysuckle in local parks.
-                            </p>
+                        <p><b>Project Timeline:</b> Fall 2021 - 2 weeks</p>
 
-                        <p>I was also able to directly help in the planning of the City of Ladue's next 15-year Comprehensive Plan, giving
-                            input from a youth perspective as to what long-term objectives should help guide city planning in the coming years.
-                            An issue we identified was how to stimulate residents' interest in shopping and eating at local businesses
-                            rather than flocking to bigger-name restaurants and stores in neighboring cities, and we were able to actionize
-                            our ideas into creating the Ladue Student Opportunities Network. This network has become a platform serving to
-                            directly connect student job/internship opportunities at the local businesses with the community's high school
-                            youth looking for summer opportunities, providing these small businesses with greater exposure while also giving
-                            interested students access to crucial career experience.</p>
+                        <p><b>Programming Language Used:</b> ReasonML</p>
+                        
+                        <p>
+                            <b>Project Purpose:</b> Demystify how the contents of the Defintions window of DrRacket are processed and printed 
+                            in the interactions window when a user clicks "Run"
+                        </p>
+
+                        <p>
+                            <b>Project Overview:</b>
+                        </p>
+                        <p>
+                            Write an interpreter program that takes in another program as input and produces exactly the same result 
+                            that DrRacket would. Specically, we take in a Rackette program represented as a string and process the 
+                            program one piece at a time to produce results in the form of strings that can be printed.
+                        </p>
+                        <p>
+                            Interpreting consists of three steps:
+                        </p>
+                        <p class="shift1">
+                            1) Read in the text and represent it as a concrete program, or more precisely, as a list of concrete program
+                            pieces
+                        </p>
+                        <p class="shift1">
+                            2) Parse and convert this concrete program into an abstract program (i.e. an internal representation of our Rackette
+                            program as a list of ReasonML entities). Each abstract program
+                            piece will correspond to
+                        </p>
+                        <p class="shift2">
+                            (a) a definition to be added to the top level environment, or
+                        </p>
+                        <p class="shift2">
+                            (b) an expression
+                        </p>
+                        <p class="shift1">
+                            3) Process the resulting internal representation, one abstract-program-piece at a time.
+                        </p>
+                        <p class="shift2">
+                            (a) If a piece is a top-level expression, evaluate it according to Rackette’s rules of evaluation, producing
+                            a different kind of entity, a value, and then convert that value into a string and print it.
+                        </p>
+                        <p class="shift2">
+                            (b) If a piece is a definition, process it by changing a “top-level environment” in which defined values are stored.
+                        </p>
+
+                       
+                        <h2>Game</h2>
+
+                        <p><b>Project Timeline:</b> Fall 2021 - 2 weeks</p>
+
+                        <p><b>Programming Language Used:</b> ReasonML</p>
+                            
+                        <p>
+                            <b>Project Purpose:</b> Implement a two-player, sequential, finite-action, deterministic, zero-sum
+                            game of perfect information and write a general purpose artificially intelligent (AI) player
+                            that can play any game of this sort
+                        </p>
+
+                        <p>
+                            <b>Project Overview:</b>
+
+                        </p>
+                        <p>    
+                            Our AI player plays a game (Connect4) using the minimax algorithm, together
+                            with a helper procedure that estimates the values of intermediate game states.
+                        </p>
+                        <p>
+                            The human player is a user interface that asks a real human which move to make. The AI player selects moves
+                            based on a generic strategy called game-tree search (i.e., the approach does
+                            not depend on which game is being played). The strategy uses a game-specific static game-state evaluator, which is a procedure that assigns a
+                            number to each game state (called the value of the state) that reflects how good/bad that state is for the AI
+                            player. In our implementation, the state evaluator is called estimateValue.
+                                                        
+                        </p>
+                 
                     </div>
 
-                    <div class="experiences-image-wrapper">
-                        <img src="images/MYC.jpg">
-                    </div>
-    
 
-                    <h1 id="year2019">2019</h1>
+                    <h1 id="cs20">CSCI 0200: Program Design with Data Structures and Algorithms</h1>
 
                     <div class="experiences-text-wrapper">
-                        <h2>World Pediatric Project</h2>
+                        <h2>Decision Tree</h2>
 
-                        <p>I first became involved with the World Pediatric Project (WPP) through my school's chapter of Spanish Honor Society in Spring 2018. After
-                            learning about the organization's goal to provide children with debilitating injuries an opportunity to come to the United States
-                            and receive the necessary surgery at no cost, I became committed to helping the kids recovering at the WPP's Ronald McDonald House
-                            in any way I could. Whether it was helping to raise money during the annual "Rock 'n' Heal" fundraiser, communicating with the children's
-                            parents in Spanish, or simply teaching the kids how to make paper airplanes, the experience definitely made me grateful to be able to be
-                            part of these kids' journeys, each of whom were more resilient and optimistic than anyone I had ever met.</p>
+                        <p><b>Project Timeline:</b> Spring 2022 - 2 weeks</p>
+
+                        <p><b>Programming Language Used:</b> Java</p>
+                            
+                        <p>
+                            <b>Project Purpose:</b> Implement a classic machine learning algorithm that uses training data to make 
+                            predictions in new situations. This algorithm uses a tree-like data structure to arrive at its predictions,
+                            and it is a simplification of the ID3 ML algorithm.
+                        </p>
+
+                        <p>
+                            <b>Project Overview:</b>
+                        </p>
+                        <p>   
+                            Our program generates a function to make predictions based on data in a dataset, reading in datasets 
+                            from CSV files and using our function to make predictions. At the heart of the algorithm we’ve 
+                            implemented a decision tree that models a series of multiple-choice questions, answers to which are 
+                            found at the leaves.
+                        </p>
+                        </p>
+                        <p>  
+                            Implementation Details:
+                        </p>
+                        <p class="shift1">  
+                            1) Generate the Decision Tree
+                        </p>
+                        <p class="shift2">  
+                            - choose an attribute to split on from the Dataset (not the target attribute and not one we’ve already split on)
+                        </p>
+                        <p class="shift2">  
+                            - create a node for that attribute
+                        </p>
+                        <p class="shift2">     
+                            - create an edge for each value of that attribute in the dataset
+                        </p>
+                        <p class="shift2">     
+                            - attach each edge to the tree generated for the subset of the dataset corresponding to the edge value
+                        </p>
+                        <p class="shift2">  
+                            - compute the default value and store it in the node
+                        </p>
+                        <p class="shift1">  
+                            2) Choose a previously unused attribute
+                        </p>
+                        <p class="shift2">  
+                            - generate a random index into the list of attributes, then use the attribute at that index to split on
+                        </p>
+                        <p class="shift1">  
+                            3) Track previously-used attibutes
+                        </p>
+                        <p class="shift2">  
+                            - track which attributes we have already split on from the dataset and which are left to consider
+                        </p>
+                        <p class="shift1">
+                            4) Traverse the Decision Tree
+                        </p>
+                        <p class="shift2">
+                            - to make a prediction of the target attribute for a new Row, we traverse the tree from the root to a decision leaf, 
+                            following the edges corresponding to the values of the attributes at each node
+                        </p>
+                        <p class="shift2">
+                            - the value in the leaf that you reach is the output of the prediction function
+                        </p>
+                        
+
+                        <h2>Search</h2>
+
+                        <p><b>Project Timeline:</b> Spring 2022 - 2 weeks</p>
+
+                        <p><b>Programming Language Used:</b> Python</p>
+                            
+                        <p>
+                            <b>Project Purpose:</b> Make our own search engine that consists of two steps: indexing and querying. 
+                            Implement the PageRank algorithm for optimizing our search results based on relevance. Because we are 
+                            potentially processing very large data, we have to consider time and space efficiency when designing 
+                            our approach.
+                        </p>
+
+                        <p>
+                            <b>Project Overview:</b>
+                        </p>
+                        <p>   
+                            Most modern search engines consist of two programs, an indexer and a querier. The indexer preprocesses 
+                            the corpus before answering any queries, saving files with information about which documents are relevant 
+                            to which words. When the querier receives a query from a user, it uses the information contained in the 
+                            file(s) to quickly respond to that query.
+                        </p>
+                        <p>
+                            The Indexer will:
+                        </p>
+                        <p class="shift1">
+                            1) Process an XML document into a list of essential terms (parsing, tokenizing, removing stop words, and stemming)
+                        </p>
+                        <p class="shift1">
+                            2) Determine the relevance between terms and documents using Term Frequency (TF) and Inverse Document Frequency (IDF)
+                        </p>
+                        <p class="shift1">
+                            3) Determine the authority of each document using PageRank (links between pages)
+                        </p>
+                        <p>
+                            The Querier will:
+                        </p>
+                        <p class="shift1">
+                            1) Parse in arguments for the index files and an optional argument that says to use PageRank
+                        </p>
+                        <p class="shift1">
+                            2) Run a (Read-Eval-Print Loop) that takes in and processes search queries
+                        </p>
+                        <p class="shift1">
+                            3) Scores documents against queries based on the term relevance and PageRank (if specified) index files
+                        </p>
 
                     </div>
 
-                    <div class="experiences-image-wrapper">
-                        <img src="images/WPProject.jpg">
-                    </div>
-
-                    <h1 id="year2018">2018</h1>
+                    <h1 id="cs33">CSCI 0330: Introduction to Computer Systems</h1>
 
                     <div class="experiences-text-wrapper">
-                        <h2>Crown Center for Senior Living</h2>
+                        <h2>Shell</h2>
 
-                        <p>I began volunteering at the local Crown Center in the summer of 2017 after my grandparents, who had been staying with us
-                            for several years, went back to China. I was incredibly fortunate to get to help with the center's seniors' dinner services
-                            and technology troubles as the conversations also helped me fill the void left by my grandparents' return to China.</p>
+                        <p><b>Project Timeline:</b> Fall 2022 - 2 weeks</p>
 
-                        <p>I was named Volunteer of the Month and accumulated over 60 volunteer hours during the course of a year.</p>
+                        <p><b>Programming Language Used:</b> C</p>
+                            
+                        <p>
+                            <b>Project Purpose:</b> Create a shell able to display a prompt, wait until the user types in a line of input,
+                            parse and execute commands. In addition, the shell must handle redirection tokens and have a basic job control system 
+                            (i.e., handle multiple processes by running them in the background as well as manage processes with signal 
+                            forwarding).
+                        </p>
+
+                        <p>
+                            <b>Project Overview:</b>
+                        </p>
+                        <p>
+                            The Makefile must be written to allow us to compile our Shell.
+                        </p>
+                        <p>  
+                            The shell must be capable of doing some text parsing on the input and taking
+                            the appropriate action. For example, some input is passed on to built-in shell commands, 
+                            while other inputs specify external programs to be executed by our shell (which will 
+                            require proper handling of child processes using fork/execv).
+                        </p>
+                        <p>
+                            The built-in commands we've implemented are cd, ln, rm, and exit.
+                        </p>
+                        <p>
+                            Typically the shell reads from STDIN and write to STDOUT. However, the command line 
+                            may contain input/output redirection tokens, in which case it sets up the appropriate files 
+                            to deal with this.
+                        </p>
+                        <p>
+                            Within our shell's job control system, we are able to handle user signals (SIGINT, SIGTSTP, 
+                            or SIGQUIT), handle multiple jobs by using a jobs list for background jobs, and reap terminated
+                            background jobs to clean up the process table. Finally, our job control system enables users to 
+                            resume paused processes in either the foreground or in the background (using the fg or bg commands, 
+                            respectively).
+                        </p>
+                        <p>
+                            Our shell supports good error-checking while it runs.
+                        </p>
                     </div>
-
-                    <div class="experiences-image-wrapper">
-                        <img src="images/crowncenter.jpg">
-                    </div>
-
-                    <h1 id="year2017">2017</h1>
 
                     <div class="experiences-text-wrapper">
-                        <h2>Kids Camp Ladue</h2>
+                        <h2>Database</h2>
 
-                        <p>The summer before my freshman year of high school, I was offered the position to serve as a 
-                            camp counselor for our district's summer camp, Kids Camp Ladue. Getting the chance to guide
-                            the Fourth Graders through their daily activities and seeing their endless enthusiasm made me
-                            realize how impactful mentors can be in any setting, and it has inspired me towards becoming
-                            a TA at Brown.</p>
+                        <p><b>Project Timeline:</b> Fall 2022 - 1.5 weeks</p>
+
+                        <p><b>Programming Language Used:</b> C</p>
+                            
+                        <p>
+                            <b>Project Purpose:</b> Create a simple server to manage a database of key-value pairs 
+                            over a network. Multiple concurrent users should be able to search for items in the database, 
+                            add new entries, and remove existing entries in a thread-safe manner.
+                        </p>
+
+                        <p>
+                            <b>Project Overview:</b>
+                        </p>
+                        
+                        <p>
+                            The client is written to connect to our server and interact with the database. The client supports 
+                            client-only commands (a, q, d, and f for adding, querying, deleting, and executing a file, respectively), 
+                            while the server supports server-only commands. The user can input queries to the client interface 
+                            from either a script file or a REPL and the client will send them to the server. The server then 
+                            processes each query and sends an appropriate response to the client.
+                        </p>
+                        <p>
+                            The database consists of a collection of nodes organized in a binary search tree (which is not 
+                            necessarily balanced). Each node contains a pointer to a left and right child, either or both of which 
+                            may be null pointers. The key associated with a given node is lexicographically greater than all keys 
+                            in the node’s left subtree, and lexicographically less than all keys in the node’s right subtree. 
+                            In other words, an in-order traversal of the tree nodes yields a lexicographical ordering of the 
+                            corresponding keys.
+                        </p>
+                        <p>
+                            The database supports the following functionality: querying, adding, removing, printing, 
+                            cleaning up, and interpreting commands and is thread-safe using fine-grained read/write locking 
+                            during tree traversals.
+                        </p>
+                        <p>
+                            The server will listen and process concurrent client requests to the database, respond to 
+                            commands such as stop, go, and print, handle EOF, and signals such as SIGINT and SIGPIPE, 
+                            and provide cleanup functionality. All of these functionalities are thread safe.
+                        </p>
                     </div>
 
-                    <div class="experiences-image-wrapper">
-                        <img src="images/KCL.png">
-                    </div>
+                    <h1 id="cs1420">CSCI 1420: Machine Learning</h1>
 
+                    <div class="experiences-text-wrapper">
+                        <h2>Project Details Coming Soon...</h2>
+
+                        <p></p>
+                    </div>
        
                 </div>
             </div>
