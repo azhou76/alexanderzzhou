@@ -227,7 +227,9 @@ a {
 }
 
 .football-content-wrapper iframe {
-    padding-left: 312px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 150px;
 }
 
